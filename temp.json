@@ -1,0 +1,827 @@
+[
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "acala"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "acalaevm"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "aeternity"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "agoric"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "aion"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "akash"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "algorand"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "aptos"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "arbitrum"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "arbitrumgoerli"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "ark"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "aryacoin"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "aurora"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "avalanchec"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "avalanchecfuji"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "avalanchex"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "axelar"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "band"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "base"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "binance"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "bitcoin"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "bitcoincash"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "bitcoingold"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "bluzelle"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "bnbt"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "boba"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "btcdiamond"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "callisto"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "cardano"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "celo"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "cfxevm"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "classic"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "comdex"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "coreum"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "cosmos"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "crescent"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "cronos"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "cryptoorg"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "dash"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "decred"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "digibyte"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "doge"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "ecash"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "ellaism"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "elrond"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "energyweb"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "eos"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "ether-1"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "ethereum"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "ethereumpow"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "everscale"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "evmos"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "fantom"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "fetch"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "filecoin"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "fio"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "firo"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "fusion"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "gbnb"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "gochain"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "goerlitestnet"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "groestlcoin"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "harmony"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "heco"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "hedera"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "hoo"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "icon"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "iost"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "iotex"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "iotexevm"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "iris"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "juno"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "kava"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "kavaevm"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "kcc"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "kin"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "klaytn"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "komodo"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "kujira"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "kusama"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "linea"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "litecoin"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "loom"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "mars"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "meter"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "metis"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "moonbasealpha"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "moonbeam"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "moonriver"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "nano"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "nativecanto"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "nativeevmos"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "nativeinjective"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "near"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "neblio"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "nebulas"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "neo"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "neon"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "nervos"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "neutron"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "neutrontestnet"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "nimiq"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "noble"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "nuls"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "oasis"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "okc"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "okx"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "okxchain"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "ontology"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "opbnb"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "optimism"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "optimismgoerli"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "osmosis"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "persistence"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "pivx"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "platon"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "poa"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "polkadot"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "polygon"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "polygonmumbai"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "polygonzkevm"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "qtum"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "quasar"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "ravencoin"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "ripple"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "ronin"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "scroll"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "secret"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "sei"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "sepolia"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "smartbch"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "smartchain"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "solana"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "sommelier"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "stargaze"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "steem"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "stellar"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "stratis"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "stride"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "sui"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "syscoin"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "teritori"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "terra"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "terrav2"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "tezos"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "tftm"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "theta"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "thorchain"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "thundertoken"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "tomochain"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "ton"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "tron"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "umee"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "vechain"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "verge"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "viacoin"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "wanchain"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "waves"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "xdai"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "xdc"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "zcash"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "zelcash"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "zen"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "zilliqa"
+  },
+  {
+    "success": true,
+    "status": "UPDATED",
+    "chain": "zksync"
+  }
+]

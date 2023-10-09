@@ -5,7 +5,7 @@ const axios = require('axios');
 const URL = 'http://127.0.0.1:1337'
 const FormData = require('form-data');
 
-const logFilePath = path.join(__dirname, 'temp.json'); // Replace 'log.txt' with your desired file name and path
+const logFilePath = path.join(__dirname, 'temp.json');
 
 // Create an array to store log messages
 const logMessages = [];
@@ -111,9 +111,9 @@ function convertJsonFilesToObject(filePaths) {
 const objects = convertJsonFilesToObject(result)
 //console.log(util.inspect(objects, false, null))
 
-async function findNetwork(chain) {
+async function findNetwork(name) {
     try {
-        const correspondingNetwork = await axios.get(`${URL}/api/networks?filters[chain]=${chain}`)
+        const correspondingNetwork = await axios.get(`${URL}/api/networks?filters[name]=${name}`)
         return correspondingNetwork.data.data[0]
     } catch (err) {
         return null
@@ -193,7 +193,7 @@ async function postToken(newToken) {
 async function fillNetwork(networks) {
     for (const network of networks) {
         try {
-            const exist = await findNetwork(network.chain)
+            const exist = await findNetwork(network.name)
             const newNetwork = mapNetwork(network)
             if (exist) {
                 const hasChanged = isDifferent(newNetwork, exist)
@@ -238,7 +238,7 @@ async function fillNetwork(networks) {
     }
 }
 
-// fillNetwork(objects.networks)
+fillNetwork(objects.networks)
 
 async function fillToken(tokens) {
     for (const token of tokens) {
@@ -291,7 +291,7 @@ async function fillToken(tokens) {
     }
 }
 
-fillToken(objects.tokens)
+// fillToken(objects.tokens)
 
 function mapNetwork(network) {
     const mapped = {

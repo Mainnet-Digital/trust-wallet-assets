@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const util = require("util");
 const axios = require("axios");
-const URL = "http://127.0.0.1:1337";
+const URL = "https://mnd-backend-staging-da5sx.ondigitalocean.app";
 const FormData = require("form-data");
 
 const logFilePath = path.join(__dirname, "temp.json");
@@ -93,10 +93,6 @@ function getNameAfterFirstSlash(filePath) {
     }
 }
 
-const result = traverse("blockchains");
-
-// console.log(util.inspect(result, false, null))
-
 function convertJsonFilesToObject(filePaths) {
     const networks = [];
     const tokens = [];
@@ -122,9 +118,6 @@ function convertJsonFilesToObject(filePaths) {
     return { networks, tokens };
 }
 
-const objects = convertJsonFilesToObject(result);
-//console.log(util.inspect(objects, false, null))
-
 async function findNetwork(name) {
     try {
         const correspondingNetwork = await axios.get(
@@ -139,7 +132,7 @@ async function findNetwork(name) {
 async function findToken(token) {
     try {
         const correspondingToken = await axios.get(
-            `${URL}/api/trust-wallet-tokens?filters[trustWalletRepoFolderName]=${token.chain}&filters[address]=${token.id}`
+            `${URL}/api/trust-wallet-tokens?filters[trustWalletRepoFolderName]=${token.chain}&filters[address]=${token.id}&populate=*`
         );
         return correspondingToken.data.data[0];
     } catch (err) {
@@ -186,8 +179,19 @@ async function updateToken(token, id) {
     return updatedToken.data;
 }
 
+function checkFileExists(filePath) {
+    return new Promise((resolve) => {
+        fs.access(filePath, fs.constants.F_OK, (err) => {
+            resolve(!err);
+        });
+    });
+}
+
 async function uploadIcon(iconPath) {
     if (iconPath === null) {
+        return null;
+    }
+    if (!(await checkFileExists(iconPath))) {
         return null;
     }
     const stream = fs.createReadStream(iconPath);
@@ -227,20 +231,22 @@ async function fillNetwork(networks) {
                 const hasChanged = isDifferent(newNetwork, exist);
                 if (hasChanged) {
                     const updated = await updateNetwork(newNetwork, exist.id);
-                    console.log({
+                    const toLog = {
                         success: true,
                         status: "UPDATED",
                         id: updated.id,
                         chain: network.chain,
-                    });
+                    };
+                    console.log(JSON.stringify(toLog));
                     continue;
                 } else {
-                    console.log({
+                    const toLog = {
                         success: true,
                         status: "UNTOUCHED",
                         id: exist.id,
                         chain: network.chain,
-                    });
+                    };
+                    console.log(JSON.stringify(toLog));
                     continue;
                 }
             }
@@ -268,9 +274,6 @@ async function fillNetwork(networks) {
     }
 }
 
-// fillNetwork(objects.networks);
-// fillToken(objects.tokens)
-
 async function fillToken(tokens) {
     for (const token of tokens) {
         try {
@@ -280,20 +283,37 @@ async function fillToken(tokens) {
                 const hasChanged = isDifferent(newToken, exist);
                 if (hasChanged) {
                     const updated = await updateToken(newToken, exist.id);
-                    console.log({
+                    const toLog = {
                         success: true,
                         status: "UPDATED",
                         id: updated.id,
                         chain: token.chain,
-                    });
+                    };
+                    console.log(JSON.stringify(toLog));
+                    continue;
+                } else if (!exist.attributes.network.data) {
+                    // re update network
+                    const networkId = await findNetwork(token.chain);
+                    const newToken = {
+                        network: networkId,
+                    };
+                    const updated = await updateToken(newToken, exist.id);
+                    const toLog = {
+                        success: true,
+                        status: "NETWORK UPDATED",
+                        id: updated.id,
+                        chain: token.chain,
+                    };
+                    console.log(JSON.stringify(toLog));
                     continue;
                 } else {
-                    console.log({
+                    const toLog = {
                         success: true,
                         status: "UNTOUCHED",
                         id: exist.id,
                         chain: token.chain,
-                    });
+                    };
+                    console.log(JSON.stringify(toLog));
                     continue;
                 }
             }
@@ -324,8 +344,6 @@ async function fillToken(tokens) {
     }
 }
 
-fillToken(objects.tokens);
-
 function mapNetwork(network) {
     const mapped = {
         name: network.name,
@@ -345,3 +363,12 @@ function mapToken(token) {
     };
     return mapped;
 }
+
+async function main() {
+    const result = traverse("blockchains");
+    const data = convertJsonFilesToObject(result);
+    // await fillNetwork(data.networks);
+    fillToken(data.tokens);
+}
+
+main();
